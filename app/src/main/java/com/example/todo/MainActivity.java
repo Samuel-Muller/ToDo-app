@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemLongClicked(int position) {
                 items.remove(position);
                 itemsAdapter.notifyItemRemoved(position);
-                Toast.makeText(getApplicationContext(), String.valueOf(position), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Item was removed", Toast.LENGTH_SHORT).show();
                 saveItems();
             }
         };
